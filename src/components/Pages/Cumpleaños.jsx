@@ -43,8 +43,8 @@ export const Cumpleaños = ({pagina}) => {
         {funcionarios.map((empleado, i) => {
           return (
             <div className="col-md-4 col-sm-12  me-5 row justify-content-center aling-items-center" key={i}>
-              <div className="col-4 w-40">
-              <Card  className="card- m-2 bg-dark text-white " border="light">
+              <div className="col-4 w-40  align-self-center">
+              <Card  className="card- m-2 bg-dark text-white" border="light">
                 <Card.Img src={empleado.avatar} />
               </Card>
               </div>
