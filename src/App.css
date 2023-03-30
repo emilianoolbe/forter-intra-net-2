@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+@media (min-width: 600px) {
+    .App{
+        display: grid;
+        grid-template-areas: 'header nav nav nav'
+                            'content content content content'
+                            'footer footer footer footer';
+        grid-template-rows: 90px auto 40px;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr;
+        height: 100vh;
+    }
+  }
+
+.App{
+    display: grid;
+    grid-template-areas:'header header header header'
+                        'contenido contenido contenido contenido'
+                        'footer footer footer footer';
+    grid-template-rows: auto auto 40px;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    height: 100vh;
+}
+
+/* Header */
+.header{
+    grid-area: header;
+    
+}
+
+/* NavBar*/
+
+.ancor {
+    margin: 0px 5px 0px 5px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.55);
+    padding: 8px 0px;
+    transition: all 300ms;
+}
+.ancor:hover{
+    color: rgba(255, 255, 255, 0.75);
+}
+.ancor:focus{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Contenido */
+.inicio, .calendario, .error404{
+    grid-area: contenido;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;    
+   
+}
+.arrows{
+    width: 80%;
+}
+.carousel-item img{
+    margin: auto;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.card-{
+   box-shadow: 0px 0px 2px 2px rgb(218, 204, 204);
+}
+.error-mensaje{
+    color: red;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+}
+.mensaje{
+    background-color: white;
+    width: fit-content;
+    padding: 2px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.botones{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botenesB {
+
+    background-color: black;
+    color: white;
+    width: 35%;
+    border-radius: 10px 0px 10px 0px;
+    border: none;
+    
+}
+/* ERROR 404  */
+.error404{
+    height: 80vh;
+}
+/* Footer */
+.footer{
+    grid-area: footer;
+}
